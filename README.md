@@ -190,7 +190,7 @@ Este projeto aborda conceitos fundamentais do React e desenvolvimento web:
 
 ## 🎨 Screenshots
 
-> Adicione aqui screenshots da aplicação em funcionamento
+<img width="1750" height="1000" alt="Image" src="https://github.com/user-attachments/assets/a166fd90-f84e-4d37-ac29-17d9a2c2fba4" />
 
 ## 🤝 Como Contribuir
 
