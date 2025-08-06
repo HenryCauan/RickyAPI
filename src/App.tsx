@@ -18,6 +18,19 @@ const App = () => {
     RickyAPI();
   }, [])
 
+  const getStatusColor = (status: string) => {
+    switch (status.toLowerCase()) {
+      case 'alive':
+        return 'bg-green-500';
+      case 'dead':
+        return 'bg-red-500';
+      case 'unknown':
+        return 'bg-gray-500';
+      default:
+        return 'bg-gray-500';
+    }
+  };
+
   return (
     <main className='w-full min-h-screen flex flex-col justify-center text-white'>
       {isdate ?
@@ -40,8 +53,11 @@ const App = () => {
                       alt={item.name}
                     />
                   </div>
-                  <h1 className='text-2xl'>{item.name}</h1>
-                  <p>{item.status}</p>
+                  <h1 className='text-2xl font-bold'>{item.name}</h1>
+                  <div className="flex self-center items-center gap-2">
+                    <div className={`w-3 h-3 rounded-full ${getStatusColor(item.status)}`}></div>
+                    <p>{item.status}</p>
+                  </div>
                 </div>
               ))}
             </section>
