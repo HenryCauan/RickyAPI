@@ -47,9 +47,11 @@ const App = () => {
   }
 
   const enterButton = () => {
-    if (input.trim()) {
+    if (input.trim() !== '') {
       setCharacter(input.trim());
       console.log('Buscando por:', input.trim());
+    } else if(input.trim() === '') {
+      setCharacter('character')
     }
   }
 
