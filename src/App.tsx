@@ -31,7 +31,7 @@ const App = () => {
             <section className='flex justify-center w-full flex-wrap overflow-auto gap-12 py-[8rem] md:px-[12rem]'>
               {isdate.map((item: any) => (
                 <div
-                  className="flex flex-col justify-between border-2 border-black shrink-0 grow-0 h-[25rem] basis-[20rem] rounded-xl bg-white text-white p-4"
+                  className="flex flex-col justify-between border-4 border-black shrink-0 grow-0 h-[25rem] basis-[20rem] rounded-xl bg-white text-white p-4"
                 >
                   <div className="w-full h-[60%]  overflow-hidden">
                     <img
