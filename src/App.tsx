@@ -59,13 +59,13 @@ const App = () => {
     <main className='w-full min-h-screen flex flex-col justify-center text-white'>
       {isdate ? (
         <>
-          <section className='relative flex flex-col justify-center items-center h-[20rem]'>
+          <section className='relative flex flex-col justify-center items-center h-[30rem]'>
             <img className='w-full h-full object-cover' src="./bg.png" alt="" />
-            <h1 className='absolute text-5xl font-bold'>The Rick and Morty API</h1>
+            <h1 className='absolute text-8xl font-extrabold'>The Rick and Morty API</h1>
           </section>
           <div className="flex justify-center items-center w-full gap-2">
             <input 
-              className='w-1/2 h-12 my-16 px-4 text-black' 
+              className='w-1/2 h-12 my-16 px-4 border-blue-500 border-2 text-black' 
               value={input} 
               onChange={handleChange} 
               placeholder='Digite o nome do personagem' 
